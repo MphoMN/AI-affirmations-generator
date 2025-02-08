@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Affirmations</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <h1>AI Affirmations Generator</h1>
-    <form>
+    <form id="affirm-gen">
       <input
         type="text"
         placeholder="Enter the type of affirmation you want"
@@ -18,11 +19,7 @@
       />
       <input type="submit" />
     </form>
-    <div>
-      Today is filled with endless opportunities
-      <br />
-      I wake up feeling energized and ready for the day
-    </div>
+    <div class="affirm" id="affirm"></div>
     <footer>
       This AI project was coded by
       <a href="https://github.com/MphoMN" target="_blank">Melinda Ndou</a> and
