@@ -1,4 +1,6 @@
 function displayAffirm(response) {
+  document.querySelector("#loading").style.display = "none";
+
   new Typewriter("#affirm", {
     strings: response.data.answer,
     autoStart: true,
@@ -9,6 +11,8 @@ function displayAffirm(response) {
 
 function generateAffirmation(event) {
   event.preventDefault();
+
+  document.querySelector("#loading").style.display = "block";
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "00c0fba388c6t2c60b1d8oea37e240eb";
